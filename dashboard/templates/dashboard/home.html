@@ -6,6 +6,10 @@
     <body>
         <div>
             <h1>Asset Tracker</h1>
+            <h2>Welcome {{request.user}}</h2>
+            <a href="/logout/">
+                <button>Logout</button>
+            </a>
             <h2>Track prices automatically</h2>
 
             <ul>
@@ -15,8 +19,12 @@
                 <li>Forex</li>
             </ul>
 
-            <button>Login</button>
-            <button>Register</button>
+            <a href="/login/">
+                <button>Login</button>
+            </a>
+            <a href="/register/">
+                <button>Register</button>
+            </a>
         </div>
     </body>
 </html>
