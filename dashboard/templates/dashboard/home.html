@@ -1,30 +1,29 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Asset Tracker</title>
+        <title>Dashboard</title>
     </head>
     <body>
-        <div>
-            <h1>Asset Tracker</h1>
+            <h1>Dashboard</h1>
             <h2>Welcome {{request.user}}</h2>
+            <hr>
+            <h3>My Alerts</h3>
+            <ul>
+                {% for alert in alerts %}
+                <li>
+                    {{ alert.ticker }}
+                    -
+                    {{ alert.target_price }}
+                </li>
+                {% empty %}
+                <li>
+                    No Alerts
+                </li>
+                {% end for %}
+            </ul>
             <a href="/logout/">
                 <button>Logout</button>
             </a>
-            <h2>Track prices automatically</h2>
 
-            <ul>
-                <li>Stocks</li>
-                <li>Crypto</li>
-                <li>Gold</li>
-                <li>Forex</li>
-            </ul>
-
-            <a href="/login/">
-                <button>Login</button>
-            </a>
-            <a href="/register/">
-                <button>Register</button>
-            </a>
-        </div>
     </body>
 </html>
