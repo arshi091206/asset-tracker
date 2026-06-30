@@ -16,9 +16,12 @@
             <ul>
                 {% for alert in alerts %}
                 <li>
-                    {{ alert.ticker }}
-                    -
-                    {{ alert.target_price }}
+                    <strong>
+                        {{ alert.ticker }}
+                    </strong>    
+                    
+                    {{ alert.condition }}
+                    ${{ alert.target_price }}
                 </li>
                 {% empty %}
                 <li>

@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from .models import Alert
 from django.contrib.auth.decorators import login_required
 
+
 @login_required
 def create_alert(request):
     if request.method=="GET":
@@ -16,10 +17,13 @@ def create_alert(request):
         target_price=request.POST["target_price"]
 
         Alert.objects.create(
+            user=request.user,
             ticker=ticker,
             asset_type=asset_type,
             condition=condition,
             target_price=target_price
         )
         return redirect("/dashboard/")
+    
+
     

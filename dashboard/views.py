@@ -12,7 +12,9 @@ def landing(request):
 
 @login_required
 def home(request):
-    alerts=Alert.objects.all()
+    alerts=Alert.objects.filter(
+        user=request.user
+    )
     return render(
         request,
         "dashboard/home.html",
