@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from alerts.models import Alert
+from django.contrib.auth.decorators import login_required
 
 # Create your views here.
 def landing(request):
@@ -9,10 +10,9 @@ def landing(request):
         "dashboard/landing.html"
     )
 
+@login_required
 def home(request):
-    print(request.user)
-
-    alerts=Alert.objecets.all()
+    alerts=Alert.objects.all()
     return render(
         request,
         "dashboard/home.html",
