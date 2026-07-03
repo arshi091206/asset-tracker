@@ -1,25 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport"
-        content="width=device-width, initial-scale=1">
-        <title>Dashboard</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
-          rel="stylesheet">
-    </head>
-    <body>
-        <nav class="navbar navbar-dark bg-dark">
-            <div class="container">
-                <a class="navbar-brand fw-bold">
-                    Asset Tracker
-                </a>
-                <a href="/logout/"
-                class="btn btn-danger">
-                Logout
-                </a>
-            </div>
-        </nav>
+{% extends "base.html" %}
+
+{% block content %}
         <div class="container mt-5">
             <h2>
                 Welcome 
@@ -36,6 +17,7 @@
                 <div class="card-body">
                     {% if alerts %}
                     <ul class="list-group">
+                         {% for alert in alerts %}
                         <li class="list-group-item d-flex justify-content-between align-items-center">
                             <div>
                                 <strong>{{ alert.ticker }}</strong>
@@ -52,6 +34,7 @@
                                 </button>
                             </div>
                         </li>
+                        {% endfor %}
                     </ul>
                     {% else %}
                     <p>
@@ -66,5 +49,4 @@
             </a>
         </div>
 
-    </body>
-</html>
+{% endblock %}
