@@ -26,12 +26,14 @@
                                 ₹{{ alert.target_price }}
                             </div>
                             <div>
-                                <button class="btn btn-warning btn-sm">
+                                <a href="/alerts/edit/{{ alert.id }}/"
+                                    class="btn btn-primary btn-sm me-2">
                                     Edit
-                                </button>
-                                <button class="btn btn-danger btn-sm">
+                                </a>
+                                <a href="/alerts/delete/{{ alert.id }}/"
+                                    class="btn btn-danger btn-sm">
                                     Delete
-                                </button>
+                                </a>
                             </div>
                         </li>
                         {% endfor %}
