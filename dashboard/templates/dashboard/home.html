@@ -23,7 +23,25 @@
                                 <strong>{{ alert.ticker }}</strong>
                                 <br>
                                 {{ alert.condition|title }}
+                                Target:
                                 ₹{{ alert.target_price }}
+                                <br>
+                                Current:
+                                {% if alert.live_price %}
+                                ₹{{ alert.live_price }}
+                                {% else %}
+                                Unavailable
+                                {% endif %}
+
+                                {% if alert.triggered %}
+                                <span class="badge bg-success">
+                                    Triggered
+                                </span>
+                                {% else %}
+                                <span class="badge bg-secondary">
+                                    Waiting
+                                </span>
+                                {% endif %}
                             </div>
                             <div>
                                 <a href="/alerts/edit/{{ alert.id }}/"

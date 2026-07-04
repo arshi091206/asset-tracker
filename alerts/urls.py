@@ -13,5 +13,5 @@ urlpatterns=[
     path(
         "edit/<int:alert_id>/",
         views.edit_alert
-    )
+    ),
 ]
