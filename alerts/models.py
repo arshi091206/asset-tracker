@@ -22,6 +22,8 @@ class Alert(models.Model):
     condition=models.CharField(max_length=10, choices=CONDITION_CHOICES)
     target_price=models.DecimalField(max_digits=10,decimal_places=2)
     is_active=models.BooleanField(default=True)
+    triggered=models.BooleanField(default=False)
+    notification_sent=models.BooleanField(default=False)
     created_at=models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
