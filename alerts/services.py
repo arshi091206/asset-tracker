@@ -1,5 +1,6 @@
 from .models import Alert
 from .utils import get_live_price
+from .notifications import send_alert_email
 
 def check_all_alerts():
     alerts=Alert.objects.filter(is_active=True)
@@ -16,9 +17,10 @@ def check_all_alerts():
             is_triggered=price>=alert.target_price
 
         if is_triggered and not alert.notification_sent:
-            print(f"Alert triggered for {alert.ticker} at price {price}")
+            send_alert_email(alert)
             alert.notification_sent=True
 
         alert.triggered=is_triggered    
 
         alert.save()
+
