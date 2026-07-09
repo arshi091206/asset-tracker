@@ -20,15 +20,19 @@
 
                     <div class="mb-3">
 
-                        <label class="form-label">
-                            Ticker
+                        <label for="company"class="form-label">
+                            Company
                         </label>
 
                         <input
                             type="text"
-                            name="ticker"
+                            id="company"
+                            name="company"
                             class="form-control"
-                            placeholder="e.g. TCS">
+                            autocomplete="off"
+                            placeholder="e.g. Infosys">
+
+                        <div id="suggestions" class="list-group"></div>
 
                     </div>
 
@@ -108,4 +112,35 @@
 
 </div>
 
+<script>
+const companyInput = document.getElementById('company');
+const suggestionsDiv = document.getElementById('suggestions');
+
+companyInput.addEventListener("input",async function(){
+    const query=companyInput.value.trim();
+
+    if(query.length<2){
+        suggestionsDiv.innerHTML="";
+        return;
+    }
+    const response = await fetch(`/alerts/search/?q=${encodeURIComponent(query)}`);
+    const assets = await response.json();
+    suggestionsDiv.innerHTML = "";
+
+    assets.forEach(asset=> {
+    const item= document.createElement("button");
+    item.type="button";
+    item.className="list-group-item list-group-item-action";
+    item.textContent=asset.name;
+
+    item.addEventListener("click",function(){
+        companyInput.value=asset.name;
+        suggestionsDiv.innerHTML="";
+    });
+    suggestionsDiv.appendChild(item);
+});
+});
+</script>
+
 {% endblock %}
+

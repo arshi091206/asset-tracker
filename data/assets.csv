@@ -1,0 +1,13 @@
+name,ticker,yahoo_symbol,asset_type
+Infosys,INFY,INFY.NS,stock
+Tata Consultancy Services,TCS,TCS.NS,stock
+Reliance Industries,RELIANCE,RELIANCE.NS,stock
+HDFC Bank,HDFCBANK,HDFCBANK.NS,stock
+ICICI Bank,ICICIBANK,ICICIBANK.NS,stock
+Bitcoin,BTC,BTC-USD,crypto
+Ethereum,ETH,ETH-USD,crypto
+Gold,GOLD,GC=F,gold
+Silver,SILVER,SI=F,gold
+USD to INR,USDINR,INR=X,forex
+EUR to INR,EURINR,EURINR=X,forex
+GBP to INR,GBPINR,GBPINR=X,forex

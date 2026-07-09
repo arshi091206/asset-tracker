@@ -14,4 +14,9 @@ urlpatterns=[
         "edit/<int:alert_id>/",
         views.edit_alert
     ),
+    path(
+        "search/",
+        views.search_assets_view,
+        name="search_assets"
+    )
 ]
