@@ -5,9 +5,7 @@ from .notifications import send_alert_email
 def check_all_alerts():
     alerts=Alert.objects.filter(is_active=True)
     for alert in alerts:
-        if alert.asset_type!="stock":
-            continue
-        price=get_live_price(alert.ticker+".NS")
+        price=get_live_price(alert.yahoo_symbol)
         if price is None:
             continue
 
@@ -23,4 +21,6 @@ def check_all_alerts():
         alert.triggered=is_triggered    
 
         alert.save()
+
+        print(alert.company, alert.yahoo_symbol, price)
 

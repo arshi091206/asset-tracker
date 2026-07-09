@@ -33,6 +33,7 @@ def create_alert(request):
         Alert.objects.create(
             user=request.user,
             ticker=ticker,
+            company=company,
             yahoo_symbol=asset["yahoo_symbol"],
             asset_type=asset_type,
             condition=condition,
@@ -81,8 +82,18 @@ def edit_alert(request, alert_id):
         )
     
     if request.method=="POST":
-        alert.ticker=request.POST["ticker"]
-        alert.asset_type=request.POST["asset_type"]
+        company=request.POST["company"]
+        asset=get_asset(company)
+        if asset is None:
+            messages.error(
+                request,
+                "Invalid company name. Please try again."
+            )
+            return redirect(f"/alerts/edit/{alert_id}/")
+        alert.ticker=asset["ticker"]
+        alert.company=company
+        alert.yahoo_symbol=asset["yahoo_symbol"]
+        alert.asset_type=asset["asset_type"]
         alert.condition=request.POST["condition"]
         alert.target_price=request.POST["target_price"]
 

@@ -17,12 +17,7 @@ def home(request):
         user=request.user
     )
     for alert in alerts:
-        if alert.asset_type=="stock":
-            alert.live_price=get_live_price(
-                alert.ticker+".NS"
-            )
-        else:
-            alert.live_price=None
+        alert.live_price=get_live_price(alert.yahoo_symbol)
 
         if alert.live_price:
             if alert.condition=="below":

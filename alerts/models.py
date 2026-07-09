@@ -18,6 +18,7 @@ class Alert(models.Model):
         ("above","Above"),
     ]
     ticker=models.CharField(max_length=20)
+    company=models.CharField(max_length=100)
     yahoo_symbol = models.CharField(max_length=30)
     asset_type=models.CharField(max_length=20, choices=ASSET_CHOICES)
     condition=models.CharField(max_length=10, choices=CONDITION_CHOICES)

@@ -7,8 +7,8 @@ def start():
     scheduler.add_job(
         check_all_alerts,
         "interval",
-        #minutes=5 
-        seconds=15
+        minutes=5 
+        #seconds=15
     )
     scheduler.start()
 
