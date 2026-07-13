@@ -4,7 +4,7 @@ from .models import Alert
 from django.contrib.auth.decorators import login_required
 from django.http import JsonResponse
 from .asset_loader import search_assets,get_asset
-from .utils import get_live_price
+from .utils import get_live_price, get_recent_price_points
 
 @login_required
 def create_alert(request):
@@ -73,11 +73,12 @@ def alert_detail(request, alert_id):
         user=request.user
     )
     alert.live_price = get_live_price(alert.yahoo_symbol)
+    chart_prices = get_recent_price_points(alert.yahoo_symbol)
 
     return render(
         request,
         "alerts/alert_detail.html",
-        {"alert": alert}
+        {"alert": alert, "chart_prices": chart_prices}
     )
 
 @login_required
@@ -131,7 +132,8 @@ def search_assets_view(request):
 
     suggestions=[
         {
-            "name":asset["name"]
+            "name":asset["name"],
+            "asset_type":asset["asset_type"],
         }
         for asset in matches
     ]

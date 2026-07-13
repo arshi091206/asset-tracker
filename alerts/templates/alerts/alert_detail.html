@@ -11,51 +11,138 @@
 <main class="alert-detail">
     <a class="back-link" href="/dashboard/">← BACK TO ALERTS</a>
 
-    <section class="card mt-4" aria-labelledby="alert-title">
-        <div class="card-body p-4">
-            <p class="detail-label">ALERT DETAILS</p>
-            <h2 id="alert-title">{{ alert.ticker }}</h2>
-            <p class="detail-company">{{ alert.company }}</p>
+    <div class="alert-detail-grid mt-4">
+        <section class="card" aria-labelledby="alert-title">
+            <div class="card-body p-4">
+                <p class="detail-label">ALERT DETAILS</p>
+                <h2 id="alert-title">{{ alert.ticker }}</h2>
+                <p class="detail-company">{{ alert.company }}</p>
 
-            <dl class="alert-details-list">
-                <div>
-                    <dt>Asset type</dt>
-                    <dd>{{ alert.get_asset_type_display }}</dd>
-                </div>
-                <div>
-                    <dt>Market symbol</dt>
-                    <dd>{{ alert.yahoo_symbol }}</dd>
-                </div>
-                <div>
-                    <dt>Condition</dt>
-                    <dd>Price goes {{ alert.get_condition_display|lower }}</dd>
-                </div>
-                <div>
-                    <dt>Target price</dt>
-                    <dd>₹{{ alert.target_price }}</dd>
-                </div>
-                <div>
-                    <dt>Current price</dt>
-                    <dd>{% if alert.live_price %}₹{{ alert.live_price }}{% else %}Unavailable{% endif %}</dd>
-                </div>
-                <div>
-                    <dt>Status</dt>
-                    <dd>{% if alert.is_active %}Active{% else %}Inactive{% endif %}</dd>
-                </div>
-                <div>
-                    <dt>Alert triggered</dt>
-                    <dd>{% if alert.triggered %}Yes{% else %}No{% endif %}</dd>
-                </div>
-                <div>
-                    <dt>Notification sent</dt>
-                    <dd>{% if alert.notification_sent %}Yes{% else %}No{% endif %}</dd>
-                </div>
-                <div>
-                    <dt>Created</dt>
-                    <dd>{{ alert.created_at|date:"d M Y" }}</dd>
-                </div>
-            </dl>
-        </div>
-    </section>
+                <dl class="alert-details-list">
+                    <div>
+                        <dt>Asset type</dt>
+                        <dd>{{ alert.get_asset_type_display }}</dd>
+                    </div>
+                    <div>
+                        <dt>Market symbol</dt>
+                        <dd>{{ alert.yahoo_symbol }}</dd>
+                    </div>
+                    <div>
+                        <dt>Condition</dt>
+                        <dd>Price goes {{ alert.get_condition_display|lower }}</dd>
+                    </div>
+                    <div>
+                        <dt>Target price</dt>
+                        <dd>₹{{ alert.target_price }}</dd>
+                    </div>
+                    <div>
+                        <dt>Current price</dt>
+                        <dd>{% if alert.live_price %}₹{{ alert.live_price }}{% else %}Unavailable{% endif %}</dd>
+                    </div>
+                    <div>
+                        <dt>Status</dt>
+                        <dd>{% if alert.is_active %}Active{% else %}Inactive{% endif %}</dd>
+                    </div>
+                    <div>
+                        <dt>Alert triggered</dt>
+                        <dd>{% if alert.triggered %}Yes{% else %}No{% endif %}</dd>
+                    </div>
+                    <div>
+                        <dt>Notification sent</dt>
+                        <dd>{% if alert.notification_sent %}Yes{% else %}No{% endif %}</dd>
+                    </div>
+                    <div>
+                        <dt>Created</dt>
+                        <dd>{{ alert.created_at|date:"d M Y" }}</dd>
+                    </div>
+                </dl>
+            </div>
+        </section>
+
+        <section class="card price-chart-card" aria-labelledby="price-chart-title">
+            <div class="card-body p-4">
+                <p class="detail-label">PRICE HISTORY</p>
+                <h2 id="price-chart-title">Last 5 closing prices</h2>
+                {% if chart_prices %}
+                <div class="price-chart" id="price-chart" aria-label="Line chart of the last five closing prices"></div>
+                {{ chart_prices|json_script:"chart-price-data" }}
+                {% else %}
+                <p class="detail-company">Price history is currently unavailable.</p>
+                {% endif %}
+            </div>
+        </section>
+    </div>
 </main>
+{% if chart_prices %}
+<script>
+    const priceData = JSON.parse(document.querySelector("#chart-price-data").textContent);
+    const chart = document.querySelector("#price-chart");
+    const namespace = "http://www.w3.org/2000/svg";
+    const width = 520;
+    const height = 280;
+    const padding = { top: 24, right: 24, bottom: 42, left: 24 };
+    const prices = priceData.map((point) => point.price);
+    const minPrice = Math.min(...prices);
+    const maxPrice = Math.max(...prices);
+    const range = maxPrice - minPrice || Math.max(maxPrice * 0.05, 1);
+    const xStep = (width - padding.left - padding.right) / Math.max(priceData.length - 1, 1);
+    const yForPrice = (price) => padding.top + ((maxPrice - price) / range) * (height - padding.top - padding.bottom);
+
+    const svg = document.createElementNS(namespace, "svg");
+    svg.setAttribute("viewBox", `0 0 ${width} ${height}`);
+    svg.setAttribute("role", "img");
+    svg.setAttribute("aria-label", "Last five closing prices");
+
+    const tooltip = document.createElement("div");
+    tooltip.className = "chart-tooltip";
+    tooltip.setAttribute("role", "status");
+    chart.appendChild(tooltip);
+
+    const points = priceData.map((point, index) => ({
+        ...point,
+        x: padding.left + index * xStep,
+        y: yForPrice(point.price),
+    }));
+    const line = document.createElementNS(namespace, "polyline");
+    line.setAttribute("class", "chart-line");
+    line.setAttribute("points", points.map((point) => `${point.x},${point.y}`).join(" "));
+    svg.appendChild(line);
+
+    points.forEach((point) => {
+        const label = document.createElementNS(namespace, "text");
+        label.setAttribute("class", "chart-date");
+        label.setAttribute("x", point.x);
+        label.setAttribute("y", height - 14);
+        label.textContent = point.label;
+        svg.appendChild(label);
+
+        const dot = document.createElementNS(namespace, "circle");
+        dot.setAttribute("class", "chart-dot");
+        dot.setAttribute("cx", point.x);
+        dot.setAttribute("cy", point.y);
+        dot.setAttribute("r", "6");
+        dot.setAttribute("tabindex", "0");
+        dot.setAttribute("role", "img");
+        dot.setAttribute("aria-label", `${point.label}: ₹${point.price.toFixed(2)}`);
+        dot.addEventListener("mouseenter", () => showPrice(point));
+        dot.addEventListener("focus", () => showPrice(point));
+        dot.addEventListener("mouseleave", hidePrice);
+        dot.addEventListener("blur", hidePrice);
+        svg.appendChild(dot);
+    });
+
+    function showPrice(point) {
+        tooltip.textContent = `₹${point.price.toFixed(2)}`;
+        tooltip.style.left = `${(point.x / width) * 100}%`;
+        tooltip.style.top = `${(point.y / height) * 100}%`;
+        tooltip.classList.add("is-visible");
+    }
+
+    function hidePrice() {
+        tooltip.classList.remove("is-visible");
+    }
+
+    chart.appendChild(svg);
+</script>
+{% endif %}
 {% endblock %}

@@ -1,4 +1,11 @@
 {% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/auth.css' %}?v=3">
+{% endblock %}
+
+{% block body_class %}auth-page{% endblock %}
 
 {% block content %}
 
@@ -38,20 +45,16 @@
 
                     <div class="mb-3">
 
-                        <label class="form-label">
+                        <label for="asset-type" class="form-label">
                             Asset Type
                         </label>
 
-                        <select
-                            name="asset_type"
-                            class="form-select">
-
-                            <option value="stock">Stock</option>
-                            <option value="crypto">Crypto</option>
-                            <option value="gold">Gold</option>
-                            <option value="forex">Forex</option>
-
-                        </select>
+                        <input
+                            type="text"
+                            id="asset-type"
+                            class="form-control"
+                            placeholder="Automatically detected"
+                            readonly>
 
                     </div>
 
@@ -115,9 +118,15 @@
 <script>
 const companyInput = document.getElementById('company');
 const suggestionsDiv = document.getElementById('suggestions');
+const assetTypeInput = document.getElementById('asset-type');
+
+function setAssetType(asset) {
+    assetTypeInput.value = asset.asset_type.charAt(0).toUpperCase() + asset.asset_type.slice(1);
+}
 
 companyInput.addEventListener("input",async function(){
     const query=companyInput.value.trim();
+    assetTypeInput.value = "";
 
     if(query.length<2){
         suggestionsDiv.innerHTML="";
@@ -127,6 +136,11 @@ companyInput.addEventListener("input",async function(){
     const assets = await response.json();
     suggestionsDiv.innerHTML = "";
 
+    const exactMatch = assets.find((asset) => asset.name.toLowerCase() === query.toLowerCase());
+    if (exactMatch) {
+        setAssetType(exactMatch);
+    }
+
     assets.forEach(asset=> {
     const item= document.createElement("button");
     item.type="button";
@@ -135,6 +149,7 @@ companyInput.addEventListener("input",async function(){
 
     item.addEventListener("click",function(){
         companyInput.value=asset.name;
+        setAssetType(asset);
         suggestionsDiv.innerHTML="";
     });
     suggestionsDiv.appendChild(item);
@@ -143,4 +158,3 @@ companyInput.addEventListener("input",async function(){
 </script>
 
 {% endblock %}
-
