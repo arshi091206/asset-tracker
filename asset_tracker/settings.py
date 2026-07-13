@@ -31,6 +31,7 @@ ALLOWED_HOSTS = [
     "localhost",
     "127.0.0.1",
     "asset-tracker-ag43.onrender.com",
+    "asset-tracker1.onrender.com"
 ]
 
 
