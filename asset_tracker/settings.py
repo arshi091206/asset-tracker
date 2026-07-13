@@ -27,7 +27,11 @@ SECRET_KEY = 'django-insecure-u1a5d8_vmhmude-o$cz&ndfvk-i)3t8inb=r53m02y+uw_pp21
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "localhost",
+    "127.0.0.1",
+    "asset-tracker-ag43.onrender.com",
+]
 
 
 # Application definition
