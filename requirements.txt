@@ -6,11 +6,13 @@ cffi==2.0.0
 charset-normalizer==3.4.7
 curl_cffi==0.15.0
 Django==6.0.6
+gunicorn==26.0.0
 idna==3.18
 markdown-it-py==4.2.0
 mdurl==0.1.2
 multitasking==0.0.13
 numpy==2.5.0
+packaging==26.2
 pandas==3.0.3
 peewee==4.1.1
 platformdirs==4.10.0
@@ -29,5 +31,5 @@ typing_extensions==4.16.0
 tzlocal==5.4.4
 urllib3==2.7.0
 websockets==16.0
+whitenoise==6.12.0
 yfinance==1.5.1
-gunicorn
