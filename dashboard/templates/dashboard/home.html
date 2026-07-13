@@ -35,7 +35,7 @@
                                 <br>
                                 Current:
                                 {% if alert.live_price %}
-                                ₹{{ alert.live_price }}
+                                ₹{{ alert.live_price|floatformat:2 }}
                                 {% else %}
                                 Unavailable
                                 {% endif %}

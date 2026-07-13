@@ -1,13 +1,601 @@
 name,ticker,yahoo_symbol,asset_type
-Infosys,INFY,INFY.NS,stock
-Tata Consultancy Services,TCS,TCS.NS,stock
-Reliance Industries,RELIANCE,RELIANCE.NS,stock
-HDFC Bank,HDFCBANK,HDFCBANK.NS,stock
-ICICI Bank,ICICIBANK,ICICIBANK.NS,stock
+Reliance Industries Limited,RELIANCE,RELIANCE.NS,stock
+HDFC Bank Limited,HDFCBANK,HDFCBANK.NS,stock
+Bharti Airtel Limited,BHARTIARTL,BHARTIARTL.NS,stock
+ICICI Bank Limited,ICICIBANK,ICICIBANK.NS,stock
+State Bank of India,SBIN,SBIN.NS,stock
+Tata Consultancy Services Limited,TCS,TCS.NS,stock
+Bajaj Finance Limited,BAJFINANCE,BAJFINANCE.NS,stock
+Larsen & Toubro Limited,LT,LT.NS,stock
+Hindustan Unilever Limited,HINDUNILVR,HINDUNILVR.NS,stock
+Sun Pharmaceutical Industries Limited,SUNPHARMA,SUNPHARMA.NS,stock
+Infosys Limited,INFY,INFY.NS,stock
+Maruti Suzuki India Limited,MARUTI,MARUTI.NS,stock
+Adani Enterprises Limited,ADANIENT,ADANIENT.NS,stock
+Adani Ports and Special Economic Zone Limited,ADANIPORTS,ADANIPORTS.NS,stock
+Adani Power Limited,ADANIPOWER,ADANIPOWER.NS,stock
+Axis Bank Limited,AXISBANK,AXISBANK.NS,stock
+Titan Company Limited,TITAN,TITAN.NS,stock
+Kotak Mahindra Bank Limited,KOTAKBANK,KOTAKBANK.NS,stock
+Mahindra & Mahindra Limited,M&M,M&M.NS,stock
+ITC Limited,ITC,ITC.NS,stock
+NTPC Limited,NTPC,NTPC.NS,stock
+UltraTech Cement Limited,ULTRACEMCO,ULTRACEMCO.NS,stock
+HCL Technologies Limited,HCLTECH,HCLTECH.NS,stock
+Oil and Natural Gas Corporation Limited,ONGC,ONGC.NS,stock
+Bajaj Finserv Ltd.,BAJAJFINSV,BAJAJFINSV.NS,stock
+JSW Steel Limited,JSWSTEEL,JSWSTEEL.NS,stock
+Hindustan Aeronautics Limited,HAL,HAL.NS,stock
+Bharat Electronics Limited,BEL,BEL.NS,stock
+Bajaj Auto Limited,BAJAJ-AUTO,BAJAJ-AUTO.NS,stock
+Life Insurance Corporation of India,LICI,LICI.NS,stock
+Nestlé India Limited,NESTLEIND,NESTLEIND.NS,stock
+Power Grid Corporation of India Limited,POWERGRID,POWERGRID.NS,stock
+Coal India Limited,COALINDIA,COALINDIA.NS,stock
+Eternal Limited,ETERNAL,ETERNAL.NS,stock
+Avenue Supermarts Limited,DMART,DMART.NS,stock
+Adani Green Energy Limited,ADANIGREEN,ADANIGREEN.NS,stock
+Asian Paints Limited,ASIANPAINT,ASIANPAINT.NS,stock
+Shriram Finance Limited,SHRIRAMFIN,SHRIRAMFIN.NS,stock
+Tata Steel Limited,TATASTEEL,TATASTEEL.NS,stock
+Hindustan Zinc Limited,HINDZINC,HINDZINC.NS,stock
+Hindalco Industries Limited,HINDALCO,HINDALCO.NS,stock
+Grasim Industries Limited,GRASIM,GRASIM.NS,stock
+InterGlobe Aviation Limited,INDIGO,INDIGO.NS,stock
+Eicher Motors Limited,EICHERMOT,EICHERMOT.NS,stock
+Indian Oil Corporation Limited,IOC,IOC.NS,stock
+Adani Energy Solutions Limited,ADANIENSOL,ADANIENSOL.NS,stock
+SBI Life Insurance Company Limited,SBILIFE,SBILIFE.NS,stock
+Divi's Laboratories Limited,DIVISLAB,DIVISLAB.NS,stock
+Wipro Limited,WIPRO,WIPRO.NS,stock
+Vedanta Aluminium Metal Limited,VAML,VAML.NS,stock
+TVS Motor Company Limited,TVSMOTOR,TVSMOTOR.NS,stock
+DLF Limited,DLF,DLF.NS,stock
+Torrent Pharmaceuticals Limited,TORNTPHARM,TORNTPHARM.NS,stock
+Solar Industries India Limited,SOLARINDS,SOLARINDS.NS,stock
+HYUNDAI MOTOR INDIA LTD,HYUNDAI,HYUNDAI.NS,stock
+Pidilite Industries Limited,PIDILITIND,PIDILITIND.NS,stock
+Jio Financial Services Limited,JIOFIN,JIOFIN.NS,stock
+Varun Beverages Limited,VBL,VBL.NS,stock
+ICICI PRUDENTIAL AMC LTD,ICICIAMC,ICICIAMC.NS,stock
+TATA MOTORS LIMITED,TMCV,TMCV.NS,stock
+Cholamandalam Investment and Finance Company Limited,CHOLAFIN,CHOLAFIN.NS,stock
+Trent Limited,TRENT,TRENT.NS,stock
+BSE Limited,BSE,BSE.NS,stock
+Cummins India Limited,CUMMINSIND,CUMMINSIND.NS,stock
+TATA CAPITAL LIMITED,TATACAP,TATACAP.NS,stock
+Samvardhana Motherson International Limited,MOTHERSON,MOTHERSON.NS,stock
+Vodafone Idea Limited,IDEA,IDEA.NS,stock
+ABB India Limited,ABB,ABB.NS,stock
+CG Power and Industrial Solutions Limited,CGPOWER,CGPOWER.NS,stock
+Bharat Heavy Electricals Limited,BHEL,BHEL.NS,stock
+Hitachi Energy India Limited,POWERINDIA,POWERINDIA.NS,stock
+Polycab India Limited,POLYCAB,POLYCAB.NS,stock
+Power Finance Corporation Limited,PFC,PFC.NS,stock
+Tech Mahindra Limited,TECHM,TECHM.NS,stock
+Bharat Petroleum Corporation Limited,BPCL,BPCL.NS,stock
+Union Bank of India,UNIONBANK,UNIONBANK.NS,stock
+Bank of Baroda Limited,BANKBARODA,BANKBARODA.NS,stock
+BILLIONBRAINS GARAGE VN L,GROWW,GROWW.NS,stock
+Britannia Industries Limited,BRITANNIA,BRITANNIA.NS,stock
+Apollo Hospitals Enterprise Limited,APOLLOHOSP,APOLLOHOSP.NS,stock
+Tata Motors Passenger Vehicles Limited,TMPV,TMPV.NS,stock
+HDFC Life Insurance Company Limited,HDFCLIFE,HDFCLIFE.NS,stock
+Siemens Limited,SIEMENS,SIEMENS.NS,stock
+Bosch Limited,BOSCHLTD,BOSCHLTD.NS,stock
+Muthoot Finance Limited,MUTHOOTFIN,MUTHOOTFIN.NS,stock
+LTM Limited,LTM,LTM.NS,stock
+Punjab National Bank,PNB,PNB.NS,stock
+Siemens Energy India Limited,ENRIN,ENRIN.NS,stock
+GMR Airports Limited,GMRAIRPORT,GMRAIRPORT.NS,stock
+The Tata Power Company Limited,TATAPOWER,TATAPOWER.NS,stock
+Lodha Developers Limited,LODHA,LODHA.NS,stock
+Bajaj Holdings & Investment Limited,BAJAJHLDNG,BAJAJHLDNG.NS,stock
+HDFC Asset Management Company Limited,HDFCAMC,HDFCAMC.NS,stock
+Canara Bank,CANBK,CANBK.NS,stock
+Indian Railway Finance Corporation Limited,IRFC,IRFC.NS,stock
+GE Vernova T&D India Ltd,GVT&D,GVT&D.NS,stock
+Cipla Limited,CIPLA,CIPLA.NS,stock
+Lupin Limited,LUPIN,LUPIN.NS,stock
+GAIL (India) Limited,GAIL,GAIL.NS,stock
+Indian Bank,INDIANB,INDIANB.NS,stock
+Zydus Lifesciences Limited,ZYDUSLIFE,ZYDUSLIFE.NS,stock
+Aditya Birla Capital Limited,ABCAPITAL,ABCAPITAL.NS,stock
+Marico Limited,MARICO,MARICO.NS,stock
+Godrej Consumer Products Limited,GODREJCP,GODREJCP.NS,stock
+Tata Consumer Products Limited,TATACONSUM,TATACONSUM.NS,stock
+Indus Towers Limited,INDUSTOWER,INDUSTOWER.NS,stock
+Max Healthcare Institute Limited,MAXHEALTH,MAXHEALTH.NS,stock
+Ambuja Cements Limited,AMBUJACEM,AMBUJACEM.NS,stock
+Vedanta Limited,VEDL,VEDL.NS,stock
+The Indian Hotels Company Limited,INDHOTEL,INDHOTEL.NS,stock
+LG ELECTRONICS INDIA LTD,LGEINDIA,LGEINDIA.NS,stock
+Jindal Steel Limited,JINDALSTEL,JINDALSTEL.NS,stock
+Mankind Pharma Limited,MANKIND,MANKIND.NS,stock
+Lloyds Metals and Energy Limited,LLOYDSME,LLOYDSME.NS,stock
+Dr. Reddy's Laboratories Limited,DRREDDY,DRREDDY.NS,stock
+Bharat Forge Limited,BHARATFORG,BHARATFORG.NS,stock
+Oracle Financial Services Software Limited,OFSS,OFSS.NS,stock
+JSW Energy Limited,JSWENERGY,JSWENERGY.NS,stock
+UNITED SPIRITS LIMITED,UNITDSPR,UNITDSPR.NS,stock
+Hero MotoCorp Limited,HEROMOTOCO,HEROMOTOCO.NS,stock
+Mazagon Dock Shipbuilders Limited,MAZDOCK,MAZDOCK.NS,stock
+Shree Cement Limited,SHREECEM,SHREECEM.NS,stock
+FSN E-Commerce Ventures Limited,NYKAA,NYKAA.NS,stock
+Ashok Leyland Limited,ASHOKLEY,ASHOKLEY.NS,stock
+LENSKART SOLUTIONS LTD,LENSKART,LENSKART.NS,stock
+REC Limited,RECLTD,RECLTD.NS,stock
+IDBI Bank Limited,IDBI,IDBI.NS,stock
+ICICI Lombard General Insurance Company Limited,ICICIGI,ICICIGI.NS,stock
+Aurobindo Pharma Limited,AUROPHARMA,AUROPHARMA.NS,stock
+One97 Communications Limited,PAYTM,PAYTM.NS,stock
+MEESHO LIMITED,MEESHO,MEESHO.NS,stock
+Laurus Labs Limited,LAURUSLABS,LAURUSLABS.NS,stock
+Hindustan Petroleum Corporation Limited,HINDPETRO,HINDPETRO.NS,stock
+WAAREE ENERGIES LIMITED,WAAREEENER,WAAREEENER.NS,stock
+Dixon Technologies (India) Limited,DIXON,DIXON.NS,stock
+The Federal Bank Limited,FEDERALBNK,FEDERALBNK.NS,stock
+L&T Finance Limited,LTF,LTF.NS,stock
+JSW Infrastructure Limited,JSWINFRA,JSWINFRA.NS,stock
+SRF Limited,SRF,SRF.NS,stock
+Persistent Systems Limited,PERSISTENT,PERSISTENT.NS,stock
+NHPC Limited,NHPC,NHPC.NS,stock
+NTPC GREEN ENERGY LIMITED,NTPCGREEN,NTPCGREEN.NS,stock
+BHARTI HEXACOM LIMITED,BHARTIHEXA,BHARTIHEXA.NS,stock
+AU Small Finance Bank Limited,AUBANK,AUBANK.NS,stock
+Adani Total Gas Limited,ATGL,ATGL.NS,stock
+IndusInd Bank Limited,INDUSINDBK,INDUSINDBK.NS,stock
+Dabur India Limited,DABUR,DABUR.NS,stock
+Nippon Life India Asset Management Limited,NAM-INDIA,NAM-INDIA.NS,stock
+Info Edge (India) Limited,NAUKRI,NAUKRI.NS,stock
+The Phoenix Mills Limited,PHOENIXLTD,PHOENIXLTD.NS,stock
+PT Merdeka Gold Resources Tbk,EMAS,EMAS.JK,gold
+PT Antam (Persero) Tbk,ANTM,ANTM.JK,gold
+AngloGold Ashanti plc,ANG,ANG.JO,gold
+Newmont Corporation,NEM,NEM.BA,gold
+Gold Fields Limited,GFI,GFI.JO,gold
+Gold Fields Limited,GFI,GFI.BA,gold
+Kinross Gold Corporation,KGC,KGC.BA,gold
+"Coeur Mining, Inc.",CDE,CDE.BA,gold
+PT Archi Indonesia Tbk,ARCI,ARCI.JK,gold
+NovaGold Resources Inc.,NG,NG.BA,gold
+Harmony Gold Mining Company Limited,HAR,HAR.JO,gold
+Harmony Gold Mining Company Limited,HMY,HMY.BA,gold
+PT J Resources Asia Pasifik Tbk,PSAB,PSAB.JK,gold
+Pan American Silver Corp.,PAAS,PAAS.BA,gold
+Agnico Eagle Mines Limited,AEM,AEM.BA,gold
+Barrick Mining Corporation,0R22,0R22.IL,gold
+Mineros S.A.,MINEROS,MINEROS.CL,gold
+Pan African Resources PLC,PAN,PAN.JO,gold
+Wheaton Precious Metals Corp.,WPM,WPM.L,gold
+Zijin Mining Group Company Limited,ZIJIN80,ZIJIN80.BK,gold
+DRDGOLD Limited,DRD,DRD.JO,gold
+Newmont Corporation,NEM,NEM.MX,gold
+Agnico Eagle Mines Limited,AEMN,AEMN.MX,gold
+PT Wilton Makmur Indonesia Tbk.,SQMI,SQMI.JK,gold
+Wheaton Precious Metals Corp.,WPMN,WPMN.MX,gold
+Endeavour Mining plc,EDV,EDV.L,gold
+Endeavour Mining plc,EDVL,EDVL.XC,gold
+Zijin Mining Group Company Limited,2899,2899.HK,gold
+ANGLOGOLD ASHANTI PLC,AUN,AUN.MX,gold
+Franco-Nevada Corporation,FNVN,FNVN.MX,gold
+Zijin Mining Group Company Limited,601899,601899.SS,gold
+Newmont Corporation,N1EM34,N1EM34.SA,gold
+Greatland Resources Limited,GGP,GGP.L,gold
+Pan American Silver Corp.,PAASN,PAASN.MX,gold
+"Royal Gold, Inc.",RGLD,RGLD.MX,gold
+"Coeur Mining, Inc.",CDE,CDE.MX,gold
+Zijin Gold International Company Limited,2259,2259.HK,gold
+Hochschild Mining plc,HOCL,HOCL.XC,gold
+Franco-Nevada Corporation,F2NV34,F2NV34.SA,gold
+Pan African Resources PLC,PAF,PAF.L,gold
+Turk Altin Isletmeleri A.S.,TRALT,TRALT.IS,gold
+Gold Fields Limited,G1FI34,G1FI34.SA,gold
+Newmont Corporation,NEM,NEM.AX,gold
+Lundin Gold Inc.,LUG,LUG.ST,gold
+NEWMONT CORPORATION CDI 1:1,NEMCL,NEMCL,gold
+"Shandong Gold Mining Co., Ltd.",600547,600547.SS,gold
+Zijin Mining Group Company Limited,ZIJMF,ZIJMF,gold
+Agnico Eagle Mines Limited,AEM,AEM.TO,gold
+Resolute Mining Limited,RSG,RSG.L,gold
+Newmont Corporation,NEM,NEM,gold
+Zijin Mining Group Company Limited,ZIJMY,ZIJMY,gold
+"Zhongjin Gold Corp.,Ltd",600489,600489.SS,gold
+B2Gold Corp.,BTGN,BTGN.MX,gold
+Zijin Mining Group Company Limited,FJZ,FJZ.F,gold
+Newmont Corporation,1NEM,1NEM.MI,gold
+Newmont Corporation,NMM,NMM.DE,gold
+Newmont Corporation,NEWM,NEWM.VI,gold
+Newmont Corporation,NMM,NMM.F,gold
+Barrick Mining Corporation,ABX,ABX.TO,gold
+Newmont Corporation,NMM0,NMM0.F,gold
+Zijin Mining Group Company Limited,FJZB,FJZB.F,gold
+"Shandong Gold Mining Co., Ltd.",1787,1787.HK,gold
+Newmont Corporation,0R28,0R28.IL,gold
+Agnico Eagle Mines Limited,AEM,AEM,gold
+Wheaton Precious Metals Corp.,WPM,WPM.TO,gold
+Amaroq Ltd.,AMRQ,AMRQ.IC,gold
+Zhaojin Mining Industry Company Limited,1818,1818.HK,gold
+Agnico Eagle Mines Limited,AE9,AE9.F,gold
+Barrick Mining Corporation,B,B,gold
+Chifeng Jilong Gold Mining Group Limited,600988,600988.SS,gold
+Zijin Mining Group Company Limited,ZIJIN13,ZIJIN13.BK,gold
+Franco-Nevada Corporation,FNV,FNV.TO,gold
+"Shanjin International Gold Co., Ltd.",000975,000975.SZ,gold
+Barrick Mining Corp.          R,ABR0,ABR0.F,gold
+Barrick Mining Corporation,ABR0,ABR0.DE,gold
+Chifeng Jilong Gold Mining Group Limited,6693,6693.HK,gold
+Wheaton Precious Metals Corp.,WPM,WPM,gold
+Anglo Asian Mining PLC,AAZ,AAZ.L,gold
+Wheaton Precious Metals Corp.,SII,SII.DE,gold
+Wheaton Precious Metals Corp.,SII,SII.F,gold
+Metals Exploration plc,MTL,MTL.L,gold
+Kinross Gold Corporation,0R2D,0R2D.IL,gold
+Wanguo Gold Group Limited,3939,3939.HK,gold
+AngloGold Ashanti plc,AU,AU,gold
+Kinross Gold Corporation,K,K.TO,gold
+Amaroq Ltd.,AMRQ,AMRQ.L,gold
+Franco-Nevada Corporation,FNV,FNV,gold
+Deccan Gold Mines Limited,DECNGOLD,DECNGOLD.BO,gold
+Thor Explorations Ltd.,THX,THX.L,gold
+ANGLOGOLD ASHANTI PLC,1ANGU,1ANGU.MI,gold
+AngloGold Ashanti plc,HT3,HT3.F,gold
+Hunan Gold Corporation Limited,002155,002155.SZ,gold
+Franco-Nevada Corporation,3FO,3FO.F,gold
+Gold Fields Limited,GFIOF,GFIOF,gold
+Gold Fields Limited,GFI,GFI,gold
+Kinross Gold Corporation,KGC,KGC,gold
+Zijin Gold International Company Limited,6LU,6LU.F,gold
+Northern Star Resources Limited,NST,NST.AX,gold
+Caledonia Mining Corporation Plc,CMCL,CMCL.L,gold
+Gold Fields Limited,EDGA,EDGA.F,gold
+Gold Fields Limited,EDG,EDG.F,gold
+Pan American Silver Corp.,PAAS,PAAS.TO,gold
+Aura Minerals Inc.,AURA33,AURA33.SA,gold
+Kinross Gold Corporation,KIN2,KIN2.F,gold
+Kinross Gold Corporation,KIN2,KIN2.DE,gold
+Ipek Dogal Enerji Kaynaklari Arastirma ve Üretim A.S.,TRENJ,TRENJ.IS,gold
+"Coeur Mining, Inc.",CDE,CDE.TO,gold
+AltynGold plc,ALTN,ALTN.L,gold
+Evolution Mining Limited,EVN,EVN.AX,gold
+Serabi Gold plc,SRB,SRB.L,gold
+"Western Region Gold Co., Ltd.",601069,601069.SS,gold
+Lingbao Gold Group Company Ltd.,3330,3330.HK,gold
+Randgold & Exploration Company Limited,RNG,RNG.JO,gold
+Northern Star Resources Limited,NESRF,NESRF,gold
+Lundin Gold Inc.,LUG,LUG.TO,gold
+Pan American Silver Corp.,PAAS,PAAS,gold
+Alamos Gold Inc.,AGI,AGI.TO,gold
+Galantas Gold Corporation,GAL,GAL.L,gold
+Northern Star Resources Limited,NS7,NS7.F,gold
+Evolution Mining Limited,EVMNY,EVMNY,gold
+Endeavour Mining plc,EDV,EDV.TO,gold
+"Royal Gold, Inc.",RGLD,RGLD,gold
+"Coeur Mining, Inc.",CDE,CDE,gold
+Evolution Mining Limited,CAHPF,CAHPF,gold
+Pan American Silver Corp.,PA2,PA2.F,gold
+"Sichuan Gold Co., Ltd.",001337,001337.SZ,gold
+"Shandong Gold Mining Co., Ltd.",188H,188H.DU,gold
+"Royal Gold, Inc.",RG3,RG3.F,gold
+ROYAL GOLD INC,1RGLD,1RGLD.MI,gold
+"Coeur Mining, Inc.",1CDE,1CDE.MI,gold
+KEFI Gold and Copper Plc,KEFI,KEFI.L,gold
+"Coeur Mining, Inc.",CDE,CDE.VI,gold
+"Coeur Mining, Inc.",CDM1,CDM1.F,gold
+"Coeur Mining, Inc.",CDM1,CDM1.DE,gold
+Evolution Mining Limited,WE7,WE7.F,gold
+Lundin Gold Inc.,LUGDF,LUGDF,gold
+IAMGOLD Corporation,IMG,IMG.TO,gold
+Alamos Gold Inc.,AGI,AGI,gold
+Endeavour Mining plc,EDVMF,EDVMF,gold
+Lundin Gold Inc.,F1YN,F1YN.F,gold
+Eldorado Gold Corporation,ELD,ELD.TO,gold
+Equinox Gold Corp.,EQX,EQX.TO,gold
+Harmony Gold Mining Company Limited,HGMCF,HGMCF,gold
+DPMMETALS CDI 1:1 [DPM],DPM,DPM.AX,gold
+DPM Metals Inc.,DPM,DPM.TO,gold
+Alamos Gold Inc.,1AL,1AL.F,gold
+"Chugai Mining Co., Ltd.",1491,1491.T,gold
+Endeavour Mining plc,6E2,6E2.F,gold
+G Mining Ventures Corp.,GMIN,GMIN.TO,gold
+Tongguan Gold Group Limited,0340,0340.HK,gold
+USD to EUR,USDEUR,USDEUR=X,forex
+USD to JPY,USDJPY,USDJPY=X,forex
+USD to GBP,USDGBP,USDGBP=X,forex
+USD to AUD,USDAUD,USDAUD=X,forex
+USD to CAD,USDCAD,USDCAD=X,forex
+USD to CHF,USDCHF,USDCHF=X,forex
+USD to CNY,USDCNY,USDCNY=X,forex
+USD to HKD,USDHKD,USDHKD=X,forex
+USD to NZD,USDNZD,USDNZD=X,forex
+USD to SEK,USDSEK,USDSEK=X,forex
+USD to NOK,USDNOK,USDNOK=X,forex
+USD to DKK,USDDKK,USDDKK=X,forex
+USD to SGD,USDSGD,USDSGD=X,forex
+USD to KRW,USDKRW,USDKRW=X,forex
+USD to INR,USDINR,USDINR=X,forex
+USD to MXN,USDMXN,USDMXN=X,forex
+USD to BRL,USDBRL,USDBRL=X,forex
+USD to ZAR,USDZAR,USDZAR=X,forex
+USD to TRY,USDTRY,USDTRY=X,forex
+USD to PLN,USDPLN,USDPLN=X,forex
+USD to THB,USDTHB,USDTHB=X,forex
+USD to IDR,USDIDR,USDIDR=X,forex
+USD to MYR,USDMYR,USDMYR=X,forex
+USD to PHP,USDPHP,USDPHP=X,forex
+USD to TWD,USDTWD,USDTWD=X,forex
+USD to AED,USDAED,USDAED=X,forex
+USD to SAR,USDSAR,USDSAR=X,forex
+EUR to USD,EURUSD,EURUSD=X,forex
+EUR to JPY,EURJPY,EURJPY=X,forex
+EUR to GBP,EURGBP,EURGBP=X,forex
+EUR to AUD,EURAUD,EURAUD=X,forex
+EUR to CAD,EURCAD,EURCAD=X,forex
+EUR to CHF,EURCHF,EURCHF=X,forex
+EUR to CNY,EURCNY,EURCNY=X,forex
+EUR to HKD,EURHKD,EURHKD=X,forex
+EUR to NZD,EURNZD,EURNZD=X,forex
+EUR to SEK,EURSEK,EURSEK=X,forex
+EUR to NOK,EURNOK,EURNOK=X,forex
+EUR to DKK,EURDKK,EURDKK=X,forex
+EUR to SGD,EURSGD,EURSGD=X,forex
+EUR to KRW,EURKRW,EURKRW=X,forex
+EUR to INR,EURINR,EURINR=X,forex
+EUR to MXN,EURMXN,EURMXN=X,forex
+EUR to BRL,EURBRL,EURBRL=X,forex
+EUR to ZAR,EURZAR,EURZAR=X,forex
+EUR to TRY,EURTRY,EURTRY=X,forex
+EUR to PLN,EURPLN,EURPLN=X,forex
+EUR to THB,EURTHB,EURTHB=X,forex
+EUR to IDR,EURIDR,EURIDR=X,forex
+EUR to MYR,EURMYR,EURMYR=X,forex
+EUR to PHP,EURPHP,EURPHP=X,forex
+EUR to TWD,EURTWD,EURTWD=X,forex
+EUR to AED,EURAED,EURAED=X,forex
+EUR to SAR,EURSAR,EURSAR=X,forex
+JPY to USD,JPYUSD,JPYUSD=X,forex
+JPY to EUR,JPYEUR,JPYEUR=X,forex
+JPY to GBP,JPYGBP,JPYGBP=X,forex
+JPY to AUD,JPYAUD,JPYAUD=X,forex
+JPY to CAD,JPYCAD,JPYCAD=X,forex
+JPY to CHF,JPYCHF,JPYCHF=X,forex
+JPY to CNY,JPYCNY,JPYCNY=X,forex
+JPY to HKD,JPYHKD,JPYHKD=X,forex
+JPY to NZD,JPYNZD,JPYNZD=X,forex
+JPY to SEK,JPYSEK,JPYSEK=X,forex
+JPY to NOK,JPYNOK,JPYNOK=X,forex
+JPY to DKK,JPYDKK,JPYDKK=X,forex
+JPY to SGD,JPYSGD,JPYSGD=X,forex
+JPY to KRW,JPYKRW,JPYKRW=X,forex
+JPY to INR,JPYINR,JPYINR=X,forex
+JPY to MXN,JPYMXN,JPYMXN=X,forex
+JPY to BRL,JPYBRL,JPYBRL=X,forex
+JPY to ZAR,JPYZAR,JPYZAR=X,forex
+JPY to TRY,JPYTRY,JPYTRY=X,forex
+JPY to PLN,JPYPLN,JPYPLN=X,forex
+JPY to THB,JPYTHB,JPYTHB=X,forex
+JPY to IDR,JPYIDR,JPYIDR=X,forex
+JPY to MYR,JPYMYR,JPYMYR=X,forex
+JPY to PHP,JPYPHP,JPYPHP=X,forex
+JPY to TWD,JPYTWD,JPYTWD=X,forex
+JPY to AED,JPYAED,JPYAED=X,forex
+JPY to SAR,JPYSAR,JPYSAR=X,forex
+GBP to USD,GBPUSD,GBPUSD=X,forex
+GBP to EUR,GBPEUR,GBPEUR=X,forex
+GBP to JPY,GBPJPY,GBPJPY=X,forex
+GBP to AUD,GBPAUD,GBPAUD=X,forex
+GBP to CAD,GBPCAD,GBPCAD=X,forex
+GBP to CHF,GBPCHF,GBPCHF=X,forex
+GBP to CNY,GBPCNY,GBPCNY=X,forex
+GBP to HKD,GBPHKD,GBPHKD=X,forex
+GBP to NZD,GBPNZD,GBPNZD=X,forex
+GBP to SEK,GBPSEK,GBPSEK=X,forex
+GBP to NOK,GBPNOK,GBPNOK=X,forex
+GBP to DKK,GBPDKK,GBPDKK=X,forex
+GBP to SGD,GBPSGD,GBPSGD=X,forex
+GBP to KRW,GBPKRW,GBPKRW=X,forex
+GBP to INR,GBPINR,GBPINR=X,forex
+GBP to MXN,GBPMXN,GBPMXN=X,forex
+GBP to BRL,GBPBRL,GBPBRL=X,forex
+GBP to ZAR,GBPZAR,GBPZAR=X,forex
+GBP to TRY,GBPTRY,GBPTRY=X,forex
+GBP to PLN,GBPPLN,GBPPLN=X,forex
+GBP to THB,GBPTHB,GBPTHB=X,forex
+GBP to IDR,GBPIDR,GBPIDR=X,forex
+GBP to MYR,GBPMYR,GBPMYR=X,forex
+GBP to PHP,GBPPHP,GBPPHP=X,forex
+GBP to TWD,GBPTWD,GBPTWD=X,forex
+GBP to AED,GBPAED,GBPAED=X,forex
+GBP to SAR,GBPSAR,GBPSAR=X,forex
+AUD to USD,AUDUSD,AUDUSD=X,forex
+AUD to EUR,AUDEUR,AUDEUR=X,forex
+AUD to JPY,AUDJPY,AUDJPY=X,forex
+AUD to GBP,AUDGBP,AUDGBP=X,forex
+AUD to CAD,AUDCAD,AUDCAD=X,forex
+AUD to CHF,AUDCHF,AUDCHF=X,forex
+AUD to CNY,AUDCNY,AUDCNY=X,forex
+AUD to HKD,AUDHKD,AUDHKD=X,forex
+AUD to NZD,AUDNZD,AUDNZD=X,forex
+AUD to SEK,AUDSEK,AUDSEK=X,forex
+AUD to NOK,AUDNOK,AUDNOK=X,forex
+AUD to DKK,AUDDKK,AUDDKK=X,forex
+AUD to SGD,AUDSGD,AUDSGD=X,forex
+AUD to KRW,AUDKRW,AUDKRW=X,forex
+AUD to INR,AUDINR,AUDINR=X,forex
+AUD to MXN,AUDMXN,AUDMXN=X,forex
+AUD to BRL,AUDBRL,AUDBRL=X,forex
+AUD to ZAR,AUDZAR,AUDZAR=X,forex
+AUD to TRY,AUDTRY,AUDTRY=X,forex
+AUD to PLN,AUDPLN,AUDPLN=X,forex
+AUD to THB,AUDTHB,AUDTHB=X,forex
+AUD to IDR,AUDIDR,AUDIDR=X,forex
+AUD to MYR,AUDMYR,AUDMYR=X,forex
+AUD to PHP,AUDPHP,AUDPHP=X,forex
+AUD to TWD,AUDTWD,AUDTWD=X,forex
+AUD to AED,AUDAED,AUDAED=X,forex
+AUD to SAR,AUDSAR,AUDSAR=X,forex
+CAD to USD,CADUSD,CADUSD=X,forex
+CAD to EUR,CADEUR,CADEUR=X,forex
+CAD to JPY,CADJPY,CADJPY=X,forex
+CAD to GBP,CADGBP,CADGBP=X,forex
+CAD to AUD,CADAUD,CADAUD=X,forex
+CAD to CHF,CADCHF,CADCHF=X,forex
+CAD to CNY,CADCNY,CADCNY=X,forex
+CAD to HKD,CADHKD,CADHKD=X,forex
+CAD to NZD,CADNZD,CADNZD=X,forex
+CAD to SEK,CADSEK,CADSEK=X,forex
+CAD to NOK,CADNOK,CADNOK=X,forex
+CAD to DKK,CADDKK,CADDKK=X,forex
+CAD to SGD,CADSGD,CADSGD=X,forex
+CAD to KRW,CADKRW,CADKRW=X,forex
+CAD to INR,CADINR,CADINR=X,forex
 Bitcoin,BTC,BTC-USD,crypto
 Ethereum,ETH,ETH-USD,crypto
-Gold,GOLD,GC=F,gold
-Silver,SILVER,SI=F,gold
-USD to INR,USDINR,INR=X,forex
-EUR to INR,EURINR,EURINR=X,forex
-GBP to INR,GBPINR,GBPINR=X,forex
+Tether,USDT,USDT-USD,crypto
+BNB,BNB,BNB-USD,crypto
+USDC,USDC,USDC-USD,crypto
+XRP,XRP,XRP-USD,crypto
+Solana,SOL,SOL-USD,crypto
+TRON,TRX,TRX-USD,crypto
+Dogecoin,DOGE,DOGE-USD,crypto
+LEO Token,LEO,LEO-USD,crypto
+Zcash,ZEC,ZEC-USD,crypto
+WhiteBIT Coin,WBT,WBT-USD,crypto
+Stellar,XLM,XLM-USD,crypto
+Monero,XMR,XMR-USD,crypto
+Cardano,ADA,ADA-USD,crypto
+Chainlink,LINK,LINK-USD,crypto
+Bitcoin Cash,BCH,BCH-USD,crypto
+Dai,DAI,DAI-USD,crypto
+Gram (prev. Toncoin),GRAM,GRAM-USD,crypto
+Litecoin,LTC,LTC-USD,crypto
+Global Dollar,USDG,USDG-USD,crypto
+Hedera,HBAR,HBAR-USD,crypto
+Avalanche,AVAX,AVAX-USD,crypto
+PayPal USD,PYUSD,PYUSD-USD,crypto
+Cronos,CRO,CRO-USD,crypto
+NEAR Protocol,NEAR,NEAR-USD,crypto
+Shiba Inu,SHIB,SHIB-USD,crypto
+Tether Gold,XAUT,XAUT-USD,crypto
+DeXe,DEXE,DEXE-USD,crypto
+World Liberty Financial,WLFI,WLFI-USD,crypto
+PAX Gold,PAXG,PAXG-USD,crypto
+OKB,OKB,OKB-USD,crypto
+MemeCore,M,M-USD,crypto
+HTX DAO,HTX,HTX-USD,crypto
+USDD,USDD,USDD-USD,crypto
+Ondo,ONDO,ONDO-USD,crypto
+Ripple USD,RLUSD,RLUSD-USD,crypto
+Worldcoin,WLD,WLD-USD,crypto
+Aave,AAVE,AAVE-USD,crypto
+Falcon USD,USDF,USDF-USD,crypto
+Polkadot,DOT,DOT-USD,crypto
+Mantle,MNT,MNT-USD,crypto
+Sky,SKY,SKY-USD,crypto
+BFUSD,BFUSD,BFUSD-USD,crypto
+Internet Computer,ICP,ICP-USD,crypto
+Bitget Token,BGB,BGB-USD,crypto
+Ethereum Classic,ETC,ETC-USD,crypto
+Quant,QNT,QNT-USD,crypto
+USDGO,USDGO,USDGO-USD,crypto
+KuCoin,KCS,KCS-USD,crypto
+JUST,JST,JST-USD,crypto
+Cosmos Hub,ATOM,ATOM-USD,crypto
+Render,RENDER,RENDER-USD,crypto
+Kaspa,KAS,KAS-USD,crypto
+Ethena,ENA,ENA-USD,crypto
+Algorand,ALGO,ALGO-USD,crypto
+NEXO,NEXO,NEXO-USD,crypto
+Beldex,BDX,BDX-USD,crypto
+Gate,GT,GT-USD,crypto
+Jupiter,JUP,JUP-USD,crypto
+Filecoin,FIL,FIL-USD,crypto
+GHO,GHO,GHO-USD,crypto
+Arbitrum,ARB,ARB-USD,crypto
+Flare,FLR,FLR-USD,crypto
+Usual USD,USD0,USD0-USD,crypto
+XDC Network,XDC,XDC-USD,crypto
+YLDS,YLDS,YLDS-USD,crypto
+Midnight,NIGHT,NIGHT-USD,crypto
+TrueUSD,TUSD,TUSD-USD,crypto
+A7A5,A7A5,A7A5-USD,crypto
+Injective,INJ,INJ-USD,crypto
+Aerodrome Finance,AERO,AERO-USD,crypto
+PancakeSwap,CAKE,CAKE-USD,crypto
+Dash,DASH,DASH-USD,crypto
+EURC,EURC,EURC-USD,crypto
+VeChain,VET,VET-USD,crypto
+Celestia,TIA,TIA-USD,crypto
+Pyth Network,PYTH,PYTH-USD,crypto
+Ether.fi,ETHFI,ETHFI-USD,crypto
+Virtuals Protocol,VIRTUAL,VIRTUAL-USD,crypto
+Artificial Superintelligence Alliance,FET,FET-USD,crypto
+Sun Token,SUN,SUN-USD,crypto
+First Digital USD,FDUSD,FDUSD-USD,crypto
+Bonk,BONK,BONK-USD,crypto
+Kite,KITE,KITE-USD,crypto
+Terra Luna Classic,LUNC,LUNC-USD,crypto
+Jito,JTO,JTO-USD,crypto
+Sei,SEI,SEI-USD,crypto
+Curve DAO,CRV,CRV-USD,crypto
+Gnosis,GNO,GNO-USD,crypto
+Bitcoin SV,BSV,BSV-USD,crypto
+BitTorrent,BTT,BTT-USD,crypto
+Monad,MON,MON-USD,crypto
+Velvet,VELVET,VELVET-USD,crypto
+Olympus,OHM,OHM-USD,crypto
+Lido DAO,LDO,LDO-USD,crypto
+Pendle,PENDLE,PENDLE-USD,crypto
+DoubleZero,2Z,2Z-USD,crypto
+Tezos,XTZ,XTZ-USD,crypto
+Decred,DCR,DCR-USD,crypto
+Legacy Frax Dollar,FRAX,FRAX-USD,crypto
+Plasma,XPL,XPL-USD,crypto
+RealLink,REAL,REAL-USD,crypto
+Conflux,CFX,CFX-USD,crypto
+Kinesis Silver,KAG,KAG-USD,crypto
+Maple Finance,SYRUP,SYRUP-USD,crypto
+KOGE,KOGE,KOGE-USD,crypto
+JasmyCoin,JASMY,JASMY-USD,crypto
+Optimism,OP,OP-USD,crypto
+FLOKI,FLOKI,FLOKI-USD,crypto
+Ultima,ULTIMA,ULTIMA-USD,crypto
+Zebec Network,ZBCN,ZBCN-USD,crypto
+crvUSD,CRVUSD,CRVUSD-USD,crypto
+Telcoin,TEL,TEL-USD,crypto
+Kaia,KAIA,KAIA-USD,crypto
+Starknet,STRK,STRK-USD,crypto
+USDai,USDAI,USDAI-USD,crypto
+USAT,USAT,USAT-USD,crypto
+Pieverse,PIEVERSE,PIEVERSE-USD,crypto
+EigenCloud (prev. EigenLayer),EIGEN,EIGEN-USD,crypto
+Raydium,RAY,RAY-USD,crypto
+WeFi,WFI,WFI-USD,crypto
+Chiliz,CHZ,CHZ-USD,crypto
+Akash Network,AKT,AKT-USD,crypto
+Axie Infinity,AXS,AXS-USD,crypto
+IOTA,IOTA,IOTA-USD,crypto
+Ethereum Name Service,ENS,ENS-USD,crypto
+KAITO,KAITO,KAITO-USD,crypto
+BTSE Token,BTSE,BTSE-USD,crypto
+SwissBorg,BORG,BORG-USD,crypto
+Zano,ZANO,ZANO-USD,crypto
+Cash Cat,CASHCAT,CASHCAT-USD,crypto
+MX,MX,MX-USD,crypto
+dogwifhat,WIF,WIF-USD,crypto
+ApeCoin,APE,APE-USD,crypto
+GUSD,GUSD,GUSD-USD,crypto
+EUR CoinVertible,EURCV,EURCV-USD,crypto
+Trust Wallet,TWT,TWT-USD,crypto
+Onyxcoin,XCN,XCN-USD,crypto
+Theta Network,THETA,THETA-USD,crypto
+Fartcoin,FARTCOIN,FARTCOIN-USD,crypto
+edgeX,EDGE,EDGE-USD,crypto
+THORChain,RUNE,RUNE-USD,crypto
+Decentraland,MANA,MANA-USD,crypto
+NEO,NEO,NEO-USD,crypto
+Humanity,H,H-USD,crypto
+Strategy PP Variable xStock,STRCX,STRCX-USD,crypto
+eCash,XEC,XEC-USD,crypto
+Synthetix,SNX,SNX-USD,crypto
+The Sandbox,SAND,SAND-USD,crypto
