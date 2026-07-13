@@ -1,29 +1,38 @@
 {% extends "base.html" %}
-{% block content %}
-            <h1 class="display-4 fw-bold">
-                Asset Tracker
-            </h1>
-            <p class="lead text-secondary">
-                Track your favourite assets automatically.
-            </p>
-            <a href="/login/" class="btn btn-primary">
-                Login
-            </a>
-            <a href="/register/" class="btn btn-success">
-                Register
-            </a>
+{% load static %}
 
-            <div class="card mt-5">
-                <div class="card-body">
-                    <h3>Features</h3>
-
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Track Stocks</li>
-                        <li class="list-group-item">Track Cypto</li>
-                        <li class="list-group-item">Track Gold</li>
-                        <li class="list-group-item">Track Forex</li>
-                        <li class="list-group-item">Personal Alerts</li>
-                    </ul>
-                </div>
-            </div>
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/landing.css' %}">
 {% endblock %}
+
+{% block body_class %}landing-page{% endblock %}
+
+{% block navigation %}{% endblock %}
+
+{% block page_content %}
+<main class="landing-hero" aria-labelledby="landing-title">
+    <section class="landing-content">
+        <h1 id="landing-title">ASSET TRACKER</h1>
+        <p class="landing-subheading">for all your financial needs</p>
+
+        <div class="landing-cta-row">
+            <p class="asset-rotator" aria-label="Track stocks, forex, gold, and crypto">
+                <span class="rotator-fixed">TRACK</span>
+                <span class="rotator-words" aria-hidden="true">
+                    <span>STOCK</span>
+                    <span>FOREX</span>
+                    <span>GOLD</span>
+                    <span>CRYPTO</span>
+                </span>
+            </p>
+
+            <div class="landing-actions">
+                <a class="start-button" href="/login/">LOGIN</a>
+                <a class="start-button" href="/register/">REGISTER</a>
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock %}
+
+{% block footer %}{% endblock %}

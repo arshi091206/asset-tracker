@@ -1,0 +1,30 @@
+:root {
+    --color-wine: #5b2333;
+    --color-baby-blue: #c1dbe8;
+    --color-ivory: #f0efdf;
+    --color-beige: #baa98b;
+    --font-display: Futura, "Futura PT", "Trebuchet MS", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: var(--color-wine);
+}
+
+.brand-navbar {
+    border-bottom: 1px solid var(--color-ivory);
+    background: var(--color-wine);
+}
+
+.brand-navbar .navbar-brand {
+    color: var(--color-baby-blue);
+    font-family: var(--font-display);
+    font-size: clamp(1.1rem, 2.5vw, 1.45rem);
+    font-weight: 900;
+    letter-spacing: -0.04em;
+}
+
+.brand-navbar .navbar-brand:hover,
+.brand-navbar .navbar-brand:focus {
+    color: var(--color-baby-blue);
+}

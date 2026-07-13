@@ -1,0 +1,74 @@
+.auth-page {
+    color: var(--color-ivory);
+    font-family: var(--font-display);
+}
+
+.auth-page .card {
+    border: 0;
+    border-radius: 1rem;
+    background: var(--color-ivory);
+    color: var(--color-beige);
+    overflow: hidden;
+}
+
+.auth-page .card-body {
+    padding: 2.25rem !important;
+}
+
+.auth-page .card h2,
+.auth-page .card label,
+.auth-page .card p,
+.auth-page .form-control,
+.auth-page .btn {
+    font-family: var(--font-display);
+}
+
+.auth-page .card h2 {
+    color: var(--color-beige);
+    font-weight: 800;
+    letter-spacing: 0.03em;
+}
+
+.auth-page .form-label {
+    color: var(--color-beige);
+    font-weight: 700;
+}
+
+.auth-page .form-control {
+    border: 1px solid var(--color-beige);
+    border-radius: 0;
+    color: var(--color-beige);
+}
+
+.auth-page .form-control:focus {
+    border-color: var(--color-baby-blue);
+    box-shadow: 0 0 0 0.2rem rgb(193 219 232 / 35%);
+}
+
+.auth-page .btn {
+    border: 2px solid var(--color-baby-blue);
+    border-radius: 0;
+    background: var(--color-baby-blue);
+    color: var(--color-ivory);
+    font-weight: 800;
+    letter-spacing: 0.08em;
+}
+
+.auth-page .btn:hover,
+.auth-page .btn:focus-visible {
+    border-color: var(--color-beige);
+    background: var(--color-beige);
+    color: var(--color-ivory);
+}
+
+.auth-page .card p {
+    color: var(--color-beige);
+}
+
+.auth-page .card a {
+    color: var(--color-baby-blue);
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: var(--color-baby-blue);
+    text-underline-offset: 0.16em;
+}
