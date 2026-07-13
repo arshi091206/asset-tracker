@@ -4,6 +4,7 @@ from .models import Alert
 from django.contrib.auth.decorators import login_required
 from django.http import JsonResponse
 from .asset_loader import search_assets,get_asset
+from .utils import get_live_price
 
 @login_required
 def create_alert(request):
@@ -65,6 +66,21 @@ def delete_alert(request, alert_id):
     return redirect("/dashboard/")
 
 @login_required
+def alert_detail(request, alert_id):
+    alert = get_object_or_404(
+        Alert,
+        id=alert_id,
+        user=request.user
+    )
+    alert.live_price = get_live_price(alert.yahoo_symbol)
+
+    return render(
+        request,
+        "alerts/alert_detail.html",
+        {"alert": alert}
+    )
+
+@login_required
 def edit_alert(request, alert_id):
     alert=get_object_or_404(
         Alert,
@@ -121,4 +137,3 @@ def search_assets_view(request):
     ]
 
     return JsonResponse(suggestions, safe=False)
-

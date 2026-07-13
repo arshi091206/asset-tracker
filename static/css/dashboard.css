@@ -1,0 +1,167 @@
+.dashboard-page {
+    min-height: 100vh;
+    background: var(--color-wine);
+}
+
+.dashboard-page h2 {
+    color: var(--color-ivory);
+    font-family: var(--font-display);
+}
+
+.dashboard-page .card {
+    border: 0;
+    border-radius: 1rem;
+    background: var(--color-ivory);
+    color: var(--color-beige);
+    overflow: hidden;
+}
+
+.dashboard-page .card-header {
+    border-bottom: 1px solid var(--color-beige);
+    background: var(--color-ivory);
+    color: var(--color-beige);
+}
+
+.dashboard-page .card-header h4 {
+    margin: 0;
+    font-family: var(--font-display);
+    font-weight: 800;
+}
+
+.dashboard-page .list-group-item {
+    border-color: rgb(186 169 139 / 45%);
+    background: var(--color-ivory);
+    color: var(--color-beige);
+}
+
+.dashboard-page .alert-name {
+    color: var(--color-beige);
+    font-family: var(--font-display);
+    font-weight: 800;
+    text-decoration-color: var(--color-baby-blue);
+    text-underline-offset: 0.15em;
+}
+
+.dashboard-page .alert-name:hover,
+.dashboard-page .alert-name:focus-visible {
+    color: var(--color-beige);
+    text-decoration-color: var(--color-beige);
+}
+
+.dashboard-page .btn-primary,
+.dashboard-page .btn-danger {
+    border-color: var(--color-baby-blue);
+    background: var(--color-baby-blue);
+    color: var(--color-beige);
+}
+
+.dashboard-page .btn-primary:hover,
+.dashboard-page .btn-primary:focus-visible,
+.dashboard-page .btn-danger:hover,
+.dashboard-page .btn-danger:focus-visible {
+    border-color: var(--color-ivory);
+    background: var(--color-beige);
+    color: var(--color-ivory);
+}
+
+.delete-confirmation {
+    width: min(calc(100% - 2rem), 25rem);
+    padding: 0;
+    border: 0;
+    border-radius: 1rem;
+    background: var(--color-ivory);
+    color: var(--color-beige);
+}
+
+.delete-confirmation::backdrop {
+    background: rgb(0 0 0 / 55%);
+}
+
+.delete-confirmation-content {
+    padding: 2rem;
+    text-align: center;
+}
+
+.delete-confirmation h3 {
+    font-family: var(--font-display);
+    font-weight: 800;
+}
+
+.delete-confirmation-actions {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+}
+
+.delete-confirmation .btn-secondary {
+    border-color: var(--color-beige);
+    background: var(--color-ivory);
+    color: var(--color-beige);
+}
+
+.alert-detail {
+    max-width: 44rem;
+}
+
+.back-link {
+    color: var(--color-ivory);
+    font-family: var(--font-display);
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 0.07em;
+    text-decoration: none;
+}
+
+.back-link:hover,
+.back-link:focus-visible {
+    color: var(--color-baby-blue);
+}
+
+.dashboard-page .alert-detail h2 {
+    color: var(--color-beige);
+}
+
+.detail-label {
+    margin-bottom: 0.5rem;
+    color: var(--color-beige);
+    font-family: var(--font-display);
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+}
+
+.detail-company {
+    color: var(--color-beige);
+}
+
+.alert-details-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.25rem;
+    margin: 2rem 0 0;
+}
+
+.alert-details-list div {
+    padding-top: 0.75rem;
+    border-top: 1px solid rgb(186 169 139 / 45%);
+}
+
+.alert-details-list dt {
+    margin-bottom: 0.25rem;
+    color: var(--color-beige);
+    font-family: var(--font-display);
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.alert-details-list dd {
+    margin: 0;
+    color: var(--color-beige);
+}
+
+@media (max-width: 520px) {
+    .alert-details-list { grid-template-columns: 1fr; }
+}

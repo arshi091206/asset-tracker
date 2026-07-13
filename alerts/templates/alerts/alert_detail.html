@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/dashboard.css' %}">
+{% endblock %}
+
+{% block body_class %}dashboard-page{% endblock %}
+
+{% block content %}
+<main class="alert-detail">
+    <a class="back-link" href="/dashboard/">← BACK TO ALERTS</a>
+
+    <section class="card mt-4" aria-labelledby="alert-title">
+        <div class="card-body p-4">
+            <p class="detail-label">ALERT DETAILS</p>
+            <h2 id="alert-title">{{ alert.ticker }}</h2>
+            <p class="detail-company">{{ alert.company }}</p>
+
+            <dl class="alert-details-list">
+                <div>
+                    <dt>Asset type</dt>
+                    <dd>{{ alert.get_asset_type_display }}</dd>
+                </div>
+                <div>
+                    <dt>Market symbol</dt>
+                    <dd>{{ alert.yahoo_symbol }}</dd>
+                </div>
+                <div>
+                    <dt>Condition</dt>
+                    <dd>Price goes {{ alert.get_condition_display|lower }}</dd>
+                </div>
+                <div>
+                    <dt>Target price</dt>
+                    <dd>₹{{ alert.target_price }}</dd>
+                </div>
+                <div>
+                    <dt>Current price</dt>
+                    <dd>{% if alert.live_price %}₹{{ alert.live_price }}{% else %}Unavailable{% endif %}</dd>
+                </div>
+                <div>
+                    <dt>Status</dt>
+                    <dd>{% if alert.is_active %}Active{% else %}Inactive{% endif %}</dd>
+                </div>
+                <div>
+                    <dt>Alert triggered</dt>
+                    <dd>{% if alert.triggered %}Yes{% else %}No{% endif %}</dd>
+                </div>
+                <div>
+                    <dt>Notification sent</dt>
+                    <dd>{% if alert.notification_sent %}Yes{% else %}No{% endif %}</dd>
+                </div>
+                <div>
+                    <dt>Created</dt>
+                    <dd>{{ alert.created_at|date:"d M Y" }}</dd>
+                </div>
+            </dl>
+        </div>
+    </section>
+</main>
+{% endblock %}

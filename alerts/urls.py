@@ -11,6 +11,10 @@ urlpatterns=[
         views.delete_alert
     ),
     path(
+        "<int:alert_id>/",
+        views.alert_detail
+    ),
+    path(
         "edit/<int:alert_id>/",
         views.edit_alert
     ),

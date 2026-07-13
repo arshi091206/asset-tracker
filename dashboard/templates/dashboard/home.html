@@ -1,4 +1,11 @@
 {% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/dashboard.css' %}">
+{% endblock %}
+
+{% block body_class %}dashboard-page{% endblock %}
 
 {% block content %}
         <div class="container mt-5">
@@ -20,7 +27,7 @@
                          {% for alert in alerts %}
                         <li class="list-group-item d-flex justify-content-between align-items-center">
                             <div>
-                                <strong>{{ alert.ticker }}</strong>
+                                <a class="alert-name" href="/alerts/{{ alert.id }}/">{{ alert.ticker }}</a>
                                 <br>
                                 {{ alert.condition|title }}
                                 Target:
@@ -48,10 +55,11 @@
                                     class="btn btn-primary btn-sm me-2">
                                     Edit
                                 </a>
-                                <a href="/alerts/delete/{{ alert.id }}/"
-                                    class="btn btn-danger btn-sm">
+                                <button class="btn btn-danger btn-sm delete-alert-button"
+                                    type="button"
+                                    data-delete-url="/alerts/delete/{{ alert.id }}/">
                                     Delete
-                                </a>
+                                </button>
                             </div>
                         </li>
                         {% endfor %}
@@ -68,5 +76,28 @@
                 + Create Alert
             </a>
         </div>
+
+        <dialog class="delete-confirmation" id="delete-confirmation" aria-labelledby="delete-confirmation-title">
+            <div class="delete-confirmation-content">
+                <h3 id="delete-confirmation-title">Are you sure?</h3>
+                <p>This alert will be permanently deleted.</p>
+                <div class="delete-confirmation-actions">
+                    <a class="btn btn-danger" id="confirm-delete" href="#">YES</a>
+                    <a class="btn btn-secondary" href="/dashboard/">NO</a>
+                </div>
+            </div>
+        </dialog>
+
+        <script>
+            const deleteDialog = document.querySelector("#delete-confirmation");
+            const confirmDelete = document.querySelector("#confirm-delete");
+
+            document.querySelectorAll(".delete-alert-button").forEach((button) => {
+                button.addEventListener("click", () => {
+                    confirmDelete.href = button.dataset.deleteUrl;
+                    deleteDialog.showModal();
+                });
+            });
+        </script>
 
 {% endblock %}
