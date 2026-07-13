@@ -50,18 +50,24 @@
 
 .dashboard-page .btn-primary,
 .dashboard-page .btn-danger {
-    border-color: var(--color-baby-blue);
-    background: var(--color-baby-blue);
-    color: var(--color-beige);
+    border-color: var(--color-ivory) !important;
+    background: var(--color-beige) !important;
+    color: var(--color-ivory) !important;
+}
+
+.dashboard-page .btn-primary2{
+    border-color: var(--color-baby-blue) !important;
+    background: var(--color-baby-blue) !important;
+    color: var(--color-wine) !important;
 }
 
 .dashboard-page .btn-primary:hover,
 .dashboard-page .btn-primary:focus-visible,
 .dashboard-page .btn-danger:hover,
 .dashboard-page .btn-danger:focus-visible {
-    border-color: var(--color-ivory);
-    background: var(--color-beige);
-    color: var(--color-ivory);
+    border-color: var(--color-baby-blue) !important;
+    background: var(--color-baby-blue) !important;
+    color: var(--color-ivory) !important;
 }
 
 .delete-confirmation {
@@ -157,7 +163,7 @@
 
 .alert-details-list dt {
     margin-bottom: 0.25rem;
-    color: var(--color-beige);
+    color: var(--color-wine);
     font-family: var(--font-display);
     font-size: 0.75rem;
     font-weight: 800;
@@ -180,6 +186,11 @@
     display: block;
     width: 100%;
     overflow: visible;
+}
+
+.alert-detail-grid h2,
+.price-chart-card h2 {
+    color: var(--color-wine) !important;
 }
 
 .chart-line {

@@ -50,27 +50,31 @@
     box-shadow: 0 0 0 0.2rem rgb(193 219 232 / 35%);
 }
 
-.auth-page .btn {
-    border: 2px solid var(--color-baby-blue);
+/* 1. Normal State (Beige background with Ivory text) */
+.auth-page .btn-primary,
+.auth-page .btn-success,
+.auth-page .card a.btn-secondary {
+    border: 2px solid var(--color-ivory) !important;
     border-radius: 0;
-    background: var(--color-baby-blue);
-    color: var(--color-ivory);
+    background: var(--color-beige) !important;
+    color: var(--color-ivory) !important; 
     font-weight: 800;
     letter-spacing: 0.08em;
-}
-
-.auth-page .btn:hover,
-.auth-page .btn:focus-visible {
-    border-color: var(--color-beige);
-    background: var(--color-beige);
-    color: var(--color-ivory);
-}
-
-.auth-page .card a.btn-secondary {
-    color: var(--color-ivory);
     text-decoration: none;
-    --bs-btn-color: var(--color-ivory);
-    --bs-btn-hover-color: var(--color-ivory);
+    --bs-btn-color: var(--color-ivory) !important;
+}
+
+/* 2. Hover & Focus State (Baby Blue background with Ivory text) */
+.auth-page .btn-primary:hover,
+.auth-page .btn-primary:focus-visible,
+.auth-page .btn-success:hover,
+.auth-page .btn-success:focus-visible,
+.auth-page .card a.btn-secondary:hover,
+.auth-page .card a.btn-secondary:focus-visible {
+    border-color: var(--color-baby-blue) !important;
+    background: var(--color-baby-blue) !important;
+    color: var(--color-ivory) !important;
+    --bs-btn-hover-color: var(--color-ivory) !important;
 }
 
 .auth-page .form-select option {

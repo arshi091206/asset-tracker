@@ -10,9 +10,9 @@
 {% block content %}
         <div class="container mt-5">
             <h2>
-                Welcome 
+                Welcome, 
                 <strong>
-                    {{ request.user.first_name|default:request.user.username }}
+                    {{ request.user.first_name|default:request.user.username }}!
                 </strong>
             </h2>
             <div class="card mt-4">
@@ -29,8 +29,10 @@
                             <div>
                                 <a class="alert-name" href="/alerts/{{ alert.id }}/">{{ alert.ticker }}</a>
                                 <br>
-                                {{ alert.condition|title }}
+                                <strong>
+                                    {{ alert.condition|title }}
                                 Target:
+                                </strong>
                                 ₹{{ alert.target_price }}
                                 <br>
                                 Current:
@@ -72,7 +74,7 @@
                 </div>
             </div>
             <a href="/alerts/create/"
-                class="btn btn-primary mt-4">
+                class="btn btn-primary2 mt-4">
                 + Create Alert
             </a>
         </div>
