@@ -3,6 +3,7 @@ from .utils import get_live_price
 from .notifications import send_alert_email
 
 def check_all_alerts():
+    print(">>> check_all_alerts() started")
     alerts=Alert.objects.filter(is_active=True)
     for alert in alerts:
         price=get_live_price(alert.yahoo_symbol)
