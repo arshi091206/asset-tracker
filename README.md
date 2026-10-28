@@ -69,6 +69,28 @@ Asset Tracker is a Django-based web application that helps users monitor the pri
 
 ```bash
 python manage.py runserver
+```
+
+## Automated tests
+
+The Django tests live in `accounts/tests.py`, `alerts/tests.py`, and
+`dashboard/tests.py`. They use Django's temporary test database and mock live
+market prices and email delivery. The scripts in `scripts/manual_*.py` are
+manual checks and are not included in the automated suite.
+
+From the project root, with a virtual environment and dependencies installed:
+
+```bash
+SECRET_KEY=local-test-only DATABASE_URL=sqlite:///db.sqlite3 \
+  python manage.py test
+```
+
+On PowerShell, set `$env:SECRET_KEY='local-test-only'` and
+`$env:DATABASE_URL='sqlite:///db.sqlite3'`, then run `python manage.py test`.
+The explicit `DATABASE_URL` keeps tests off the production PostgreSQL database.
+The suite is also run on each push and pull request by
+`.github/workflows/tests.yml`; the test workflow needs no production secrets.
+
 ## Project Structure
 
 ```
